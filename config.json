@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "name": "category 1",
+      "icon": "icons/placeholder.png",
+      "items": [
+        {"title": "setup guide", "icon": "icons/information.png", "url": "https://files.rainsounds2.com/public_files/portal-guide.pdf", "aboutBlank": false, "description": "how to add your own categories and links to this portal"}
+      ]
+    },
+    {
+      "name": "category too",
+      "icon": "icons/placeholder.png",
+      "items": [
+        {"title": "rainyware website", "icon": "icons/rainywareworkshop.png", "url": "https://rainyware.rainsounds2.com/", "aboutBlank": false, "description": "rainyware website"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "mainfont";
+  src: url("fonts/mm2.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: #0000ff;
+  font-family: "mainfont", sans-serif;
+  overflow: hidden;
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+}
+
+#xmb {
+  position: absolute;
+  left: 100px;
+  top: 25%;
+  transform: translateY(-25%);
+  display: flex;
+  gap: 41px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 200px;
+}
+
+.category-icon-wrapper {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.category .icon-scale {
+  transition: transform 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+}
+
+.category img {
+  width: 72px;
+  height: 72px;
+}
+
+.cat-label {
+  font-size: 18px;
+  text-align: center;
+}
+
+.category.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: #0000ff;
+  text-decoration-thickness: 2px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 1;
+  background: transparent;
+}
+
+.item.active {
+  border: 2px solid #0000ff;
+  background: transparent;
+  border-radius: 0px;
+  z-index: 5;
+}
+
+.item img {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.item span {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+#item-description {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  max-width: 1000px;
+  padding: 15px;
+  color: #0000ff;
+  border: 2px solid #0000ff;
+  border-radius: 0px;
+  font-size: 14px;
+  display: none;
+}
